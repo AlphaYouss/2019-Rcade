@@ -1,0 +1,6 @@
+MainPackage=D:\Programming\C#\ProftaakVerdieping_S1\Rcade\Rcade\bin\ARM\Debug\Rcade_7.3.0.0_ARM_Debug.msix
+SymbolPackage=D:\Programming\C#\ProftaakVerdieping_S1\Rcade\Rcade\obj\ARM\Debug\Symbols\Rcade_7.3.0.0_ARM_Debug.appxsym
+ResourcePack=D:\Programming\C#\ProftaakVerdieping_S1\Rcade\Rcade\bin\ARM\Debug\Rcade_7.3.0.0_scale-100.msix
+ResourcePack=D:\Programming\C#\ProftaakVerdieping_S1\Rcade\Rcade\bin\ARM\Debug\Rcade_7.3.0.0_scale-125.msix
+ResourcePack=D:\Programming\C#\ProftaakVerdieping_S1\Rcade\Rcade\bin\ARM\Debug\Rcade_7.3.0.0_scale-150.msix
+ResourcePack=D:\Programming\C#\ProftaakVerdieping_S1\Rcade\Rcade\bin\ARM\Debug\Rcade_7.3.0.0_scale-400.msix

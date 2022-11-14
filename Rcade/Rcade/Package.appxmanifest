@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="77d0e793-dfcb-47cd-9920-fe951233b3b2"
+    Publisher="CN=Youss"
+    Version="7.3.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="77d0e793-dfcb-47cd-9920-fe951233b3b2" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>Rcade</DisplayName>
+    <PublisherDisplayName>Youssef</PublisherDisplayName>
+    <Logo>Assets\Images\application\icon50.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="Rcade.App">
+      <uap:VisualElements
+        DisplayName="Rcade"
+        Square150x150Logo="Assets\Images\application\icon300.png"
+        Square44x44Logo="Assets\Images\application\icon88.png"
+        Description="An competitive arcade hall fit for young teens and young adults featuring casual and more intermiate games."
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Images\application\icon620.png" ShortName="transparent" Square71x71Logo="Assets\Images\application\SmallTile.png" Square310x310Logo="Assets\Images\application\LargeTile.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+            <uap:ShowOn Tile="square150x150Logo"/>
+            <uap:ShowOn Tile="square310x310Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
+        <uap:SplashScreen Image="Assets\Images\application\icon1240.png"  BackgroundColor="transparent"/>
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/></uap:InitialRotationPreference>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

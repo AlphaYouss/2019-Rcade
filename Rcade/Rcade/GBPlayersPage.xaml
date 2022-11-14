@@ -1,0 +1,144 @@
+﻿<Page
+    x:Class="Rcade.GBPlayersPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Rcade"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Foreground="White"
+    RequestedTheme="Dark">
+
+    <Grid x:Name="main">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Images/gb/background.jpg">
+            </ImageBrush>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.09625*"/>
+            <ColumnDefinition Width="0.8875*"/>
+            <ColumnDefinition Width="0.09625*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Viewbox Grid.Row="5" StretchDirection="Both" Stretch="Uniform">
+                <Button x:Name="btnBack" Click="btnBack_Click" Padding="0">
+                    <Image Source="/Assets/Images/gb/back.png"/>
+                </Button>
+            </Viewbox>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.05*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.05*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.05*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="5">
+                <Viewbox Stretch="Fill" StretchDirection="Both">
+                    <TextBox x:Name="txtPlayerCount" IsTabStop="False" Padding="5,10,5,10" BorderThickness="3,2" Background="#000000" BorderBrush="#FFEC00FB" HorizontalAlignment="Left" FontSize="36" Text="Players: 2" Width="450" IsReadOnly="True" IsHitTestVisible="False"/>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="3" Grid.Column="10">
+                <Viewbox Grid.Row="5" StretchDirection="Both" Stretch="Uniform" Margin="2,0">
+                    <Button x:Name="btnPlus" Click="btnPlus_Click" Padding="0">
+                        <Image Source="/Assets/Images/gb/plus.jpg"/>
+                    </Button>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="3" Grid.Column="11">
+                <Viewbox Grid.Row="5" StretchDirection="Both" Stretch="Uniform" Margin="2.5,0">
+                    <Button x:Name="btnMin" Click="btnMin_Click" Padding="0" >
+                        <Image Source="/Assets/Images/gb/min.jpg"/>
+                    </Button>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="4" Grid.Column="6" Grid.ColumnSpan="2">
+                <Viewbox Grid.Row="5" StretchDirection="Both" Stretch="Uniform">
+                    <Button x:Name="btnConfirm" Click="btnConfirm_Click" Padding="0" Margin="10" BorderThickness="0" >
+                        <Image Source="/Assets/Images/gb/confirm.jpg"/>
+                    </Button>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="3">
+                <Border x:Name="s1" Visibility="Collapsed" BorderBrush="#FFEC00FB" BorderThickness="2" Background="#000000">
+                    <Viewbox Stretch="Fill">
+                        <TextBlock Padding="5,10,5,10" FontFamily="Consolas" Width="120" x:Name="Player1"/>
+                    </Viewbox>
+                </Border>
+            </Grid>
+
+            <Grid Grid.Row="8" Grid.Column="4" Grid.ColumnSpan="3">
+                <Viewbox Grid.Row="1" StretchDirection="Both" HorizontalAlignment="Left" Stretch="Fill">
+                    <TextBox BorderThickness="1.5" Background="#000000" Visibility="Collapsed" TextChanged="Speler_TextChanged" x:Name="Player2" PlaceholderText="Player 2" Width="120" FontFamily="Consolas" Padding="5,10,5,10" Foreground="White" MaxLength="10" BorderBrush="#FFEC00FB"/>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="10" Grid.Column="4" Grid.ColumnSpan="3">
+                <Viewbox Grid.Row="1" StretchDirection="Both" HorizontalAlignment="Left" Stretch="Fill">
+                    <TextBox BorderThickness="1.5" Background="#000000" Visibility="Collapsed" TextChanged="Speler_TextChanged" x:Name="Player3" PlaceholderText="Player 3" Width="120" FontFamily="Consolas" Padding="5,10,5,10" Foreground="White" MaxLength="10" BorderBrush="#FFEC00FB"/>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="3">
+                <Viewbox Grid.Row="1" StretchDirection="Both" HorizontalAlignment="Left" Stretch="Fill">
+                    <TextBox BorderThickness="2" Background="#000000" Visibility="Collapsed" TextChanged="Speler_TextChanged" x:Name="Player4" PlaceholderText="Player 4" Width="120" FontFamily="Consolas" Padding="5,10,5,10" Foreground="White" MaxLength="10" BorderBrush="#FFEC00FB"/>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="8" Grid.Column="8" Grid.ColumnSpan="3">
+                <Viewbox Grid.Row="1" StretchDirection="Both" HorizontalAlignment="Left" Stretch="Fill">
+                    <TextBox BorderThickness="2" Background="#000000" Visibility="Collapsed" TextChanged="Speler_TextChanged" x:Name="Player5" PlaceholderText="Player 5" Width="120" FontFamily="Consolas" Padding="5,10,5,10" Foreground="White" MaxLength="10" BorderBrush="#FFEC00FB"/>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="11" Grid.Column="6" Grid.ColumnSpan="3">
+                <Viewbox StretchDirection="Both" Stretch="Uniform">
+                    <Button Visibility="Collapsed" x:Name="btnPlay" BorderThickness="0" Click="btnPlay_Click" Padding="0" Margin="0,7.5">
+                        <Image Source="/Assets/Images/gb/play.jpg"/>
+                    </Button>
+                </Viewbox>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

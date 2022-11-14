@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="BlackJack.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BlackJack"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" d:DesignWidth="1106" d:DesignHeight="788">
+
+    <Grid>
+        <TextBlock  Name="Saldo"                HorizontalAlignment="Left" Margin="987,190,0,0" Text="Saldo" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock  Name="KaartenDealer"        HorizontalAlignment="Left" Margin="796,238,0,0" Text="KaartenDealer" TextWrapping="Wrap" VerticalAlignment="Top" Height="135" Width="170"/>
+        <TextBlock  Name="KaartenSpeler"        HorizontalAlignment="Left" Margin="554,236,0,0" Text="KaartenSpeler" TextWrapping="Wrap" VerticalAlignment="Top" Height="135" Width="170"/>
+        <TextBlock  Name="TotaalPuntenSpeler"   HorizontalAlignment="Left" Margin="260,509,0,0" Text="Totaal punten" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <TextBlock  Name="Uitkomst"             HorizontalAlignment="Left" Margin="706,164,0,0" Text="-" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock  Name="tbWinstVerlies"       HorizontalAlignment="Left" Margin="392,86,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+        <Button Name="Hit"                  Content="Hit" Margin="532,364,0,0" VerticalAlignment="Top" Height="81" Width="200" Click="Hit_Click"/>
+        <Button Name ="Stand"               Content="Stand" Margin="784,359,0,0" VerticalAlignment="Top" Height="81" Width="185" Click="Stand_Click"/>
+        <Button Name="NewGame"              Content="New Game" Margin="960,143,0,0" VerticalAlignment="Top" Click="NewGame_Click"/>
+        <Button Name="Elf"                  Content="Elf" Margin="784,154,0,0" VerticalAlignment="Top" Click="Elf_Click"/>
+        <Button Name="Een"                  Content="Een" Margin="686,154,0,0" VerticalAlignment="Top" Height="33" Width="47" Click="Een_Click"/>
+        <Button Name ="DoubleDownKnop"      Content="Double Down?" Margin="152,423,0,0" VerticalAlignment="Top" Click="DoubleDown_Click"/>
+        <Button Name="Insurance"            Content="Insurance?" Margin="313,418,0,0" VerticalAlignment="Top" Click="Insurance_Click"/>
+
+        <Button     Name="ConfirmInzet"     Content="Voer Inzet in" Margin="200,348,0,0" VerticalAlignment="Top" Click="ConfirmInzet_Click"/>
+        <Button     Name="VijftigKnop"      Content="50" Margin="173,173,0,0" VerticalAlignment="Top" Click="VijftigKnop_Click"/>
+        <Button     Name="HonderdKnop"      Content="100" Margin="265,173,0,0" VerticalAlignment="Top" Click="HonderdKnop_Click"/>
+        <Button     Name="TweehonderdKnop"  Content="200" Margin="169,238,0,0" VerticalAlignment="Top" Click="TweehonderdKnop_Click"/>
+        <Button     Name="VijfhonderdKnop"  Content="500" Margin="265,238,0,0" VerticalAlignment="Top" Click="VijfhonderdKnop_Click"/>
+        <Button     Name="ResetInzet"       Content="Reset inzet" Margin="52,348,0,0" VerticalAlignment="Top" Click="ResetInzet_Click"/>
+        <TextBlock  Name="TbInzet"          HorizontalAlignment="Left" Margin="220,312,0,0" Text="50" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        
+
+        <Image Name="SpelerKaart1" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="120,530,0,0" VerticalAlignment="Top" Width="66"/>
+        <Image Name="SpelerKaart2" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="200,530,0,0" VerticalAlignment="Top" Width="66" />
+        <Image Name="SpelerKaart3" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="280,530,0,0" VerticalAlignment="Top" Width="76"/>
+        <Image Name="SpelerKaart4" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="360,530,0,0" VerticalAlignment="Top" Width="76"/>
+        <Image Name="SpelerKaart5" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="120,650,0,0" VerticalAlignment="Top" Width="66"/>
+        <Image Name="SpelerKaart6" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="200,650,0,0" VerticalAlignment="Top" Width="66" />
+        <Image Name="SpelerKaart7" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="280,650,0,0" VerticalAlignment="Top" Width="76"/>
+        <Image Name="SpelerKaart8" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="360,650,0,0" VerticalAlignment="Top" Width="76"/>
+
+        <Image Name="DealerKaart1" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="760,526,0,0" VerticalAlignment="Top" Width="66"/>
+        <Image Name="DealerKaart2" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="840,526,0,0" VerticalAlignment="Top" Width="66" />
+        <Image Name="DealerKaart3" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="920,526,0,0" VerticalAlignment="Top" Width="76"/>
+        <Image Name="DealerKaart4" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="1000,526,0,0" VerticalAlignment="Top" Width="76"/>
+        <Image Name="DealerKaart5" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="760,650,0,0" VerticalAlignment="Top" Width="66"/>
+        <Image Name="DealerKaart6" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="840,650,0,0" VerticalAlignment="Top" Width="66" />
+        <Image Name="DealerKaart7" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="920,650,0,0" VerticalAlignment="Top" Width="76"/>
+        <Image Name="DealerKaart8" Source="/Assets/Speelkaarten/achterkant kaart.jpg" HorizontalAlignment="Left" Height="100" Margin="1000,650,0,0" VerticalAlignment="Top" Width="76"/>
+    </Grid>
+</Page>

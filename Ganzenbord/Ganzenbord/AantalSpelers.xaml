@@ -1,0 +1,156 @@
+﻿<Page
+    x:Class="Ganzenbord.AantalSpelers"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ganzenbord"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Foreground="White"
+    RequestedTheme="Dark">
+
+
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/How-To-Make-Synthwave-Music.jpg">
+            </ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.05625*"/>
+            <ColumnDefinition Width="0.8875*"/>
+            <ColumnDefinition Width="0.05625*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="113*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="113*"/>
+                <ColumnDefinition Width="114"/>
+                <ColumnDefinition Width="113*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="113*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="113*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="113*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.05*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.05*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="5">
+                <Viewbox Stretch="Fill">
+                    <TextBox x:Name="txtPlayerCount" HorizontalAlignment="Left" FontSize ="36"  Text="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="300" IsReadOnly="True"/>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="9">
+                <Viewbox Grid.Row="5" StretchDirection="Both" Stretch="Uniform">
+                    <Button x:Name="btnPlus" Click="btnPlus_Click" Padding="0" >
+                        <Image Source="/Assets/Plus.jpg"/>
+                    </Button>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="10">
+                <Viewbox Grid.Row="5" StretchDirection="Both" Stretch="Uniform">
+                    <Button x:Name="btnMin" Click="btnMin_Click" Padding="0" >
+                        <Image Source="/Assets/Min.jpg"/>
+                    </Button>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="3">
+                <Viewbox Grid.Row="5" StretchDirection="Both" Stretch="Uniform">
+                    <Button x:Name="btnConfirm" Click="btnConfirm_Click" Padding="0" >
+                        <Image Source="/Assets/Confirm.jpg"/>
+                    </Button>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="3">
+                <Border x:Name="s1" Visibility="Collapsed" BorderBrush="#FFEC00FB" BorderThickness="5">
+                    <Viewbox Stretch="Fill">
+                        <TextBlock Padding="5,10,5,10" FontFamily="Consolas" Width="100" Text="Frankie" x:Name="Speler1"/>
+                    </Viewbox>
+                </Border>
+            </Grid>
+
+            <Grid Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="3">
+                <Viewbox Grid.Row="1" StretchDirection="Both" HorizontalAlignment="Left" Stretch="Fill">
+                    <TextBox Visibility="Collapsed" TextChanged="Speler_TextChanged" x:Name="Speler2" PlaceholderText="Player 2" Width="100" FontFamily="Consolas" Padding="5,10,5,10" Foreground="White" MaxLength="10" BorderBrush="#FFEC00FB"/>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="9" Grid.Column="4" Grid.ColumnSpan="3">
+                <Viewbox Grid.Row="1" StretchDirection="Both" HorizontalAlignment="Left" Stretch="Fill">
+                    <TextBox Visibility="Collapsed" TextChanged="Speler_TextChanged" x:Name="Speler3" PlaceholderText="Player 3" Width="100" FontFamily="Consolas" Padding="5,10,5,10" Foreground="White" MaxLength="10" BorderBrush="#FFEC00FB"/>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="5" Grid.Column="8" Grid.ColumnSpan="3">
+                <Viewbox Grid.Row="1" StretchDirection="Both" HorizontalAlignment="Left" Stretch="Fill">
+                    <TextBox Visibility="Collapsed" TextChanged="Speler_TextChanged" x:Name="Speler4" PlaceholderText="Player 4" Width="100" FontFamily="Consolas" Padding="5,10,5,10" Foreground="White" MaxLength="10" BorderBrush="#FFEC00FB"/>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="7" Grid.Column="8" Grid.ColumnSpan="3">
+                <Viewbox Grid.Row="1" StretchDirection="Both" HorizontalAlignment="Left" Stretch="Fill">
+                    <TextBox Visibility="Collapsed" TextChanged="Speler_TextChanged" x:Name="Speler5" PlaceholderText="Player 5" Width="100" FontFamily="Consolas" Padding="5,10,5,10" Foreground="White" MaxLength="10" BorderBrush="#FFEC00FB"/>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="9" Grid.Column="8" Grid.ColumnSpan="3">
+                <Viewbox Stretch="Fill">
+                    <Button Visibility="Collapsed" Name="btnPlay" Click="btnPlay_Click">
+                        <Image Source="/Assets/Play.jpg"/>
+                        <Button.Resources>
+                            <ResourceDictionary>
+                                <ResourceDictionary.ThemeDictionaries>
+                                    <ResourceDictionary x:Key="Light">
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#CB55CE"/>
+                                    </ResourceDictionary>
+                                </ResourceDictionary.ThemeDictionaries>
+                            </ResourceDictionary>
+                        </Button.Resources>
+                    </Button>
+                </Viewbox>
+            </Grid>
+
+        </Grid>
+
+        <!--<Grid>
+            <TextBox x:Name="txtPlayerCount" HorizontalAlignment="Left" FontSize ="36" Margin="386,0,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="309" Height="60" IsReadOnly="True"/>
+            <Button x:Name="btnPlus" Content="+"  FontSize="40" Margin="719,511,0,0" VerticalAlignment="Top" Height="60" Width="60" Click="btnPlus_Click"/>
+            <Button x:Name="btnMin" Content="-"  FontSize="40" Margin="800,0,0,0" Height="60" Width="60" Click="btnMin_Click"/>
+            <Button x:Name="btnConfirm" Content="Confirm"  FontSize="36" Margin="541,601,0,0" Height="60" Width="162" Click="btnConfirm_Click" VerticalAlignment="Top"/>
+        </Grid>-->
+
+    </Grid>
+</Page>

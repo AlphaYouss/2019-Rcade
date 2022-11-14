@@ -1,0 +1,2 @@
+MainPackage=D:\Programming\C#\ProftaakVerdieping_S1\Rcade\Rcade\bin\x64\Debug\Rcade_7.3.0.0_x64_Debug.msix
+SymbolPackage=D:\Programming\C#\ProftaakVerdieping_S1\Rcade\Rcade\obj\x64\Debug\Symbols\Rcade_7.3.0.0_x64_Debug.appxsym

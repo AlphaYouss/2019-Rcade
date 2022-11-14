@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="Boter__Kaas_en_Eieren.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Boter__Kaas_en_Eieren">
+
+</Application>
